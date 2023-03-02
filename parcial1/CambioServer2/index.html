@@ -1,0 +1,11 @@
+Usted ha sido redirigido exitosamente. Felicidades y bienvenido al nuevo portal de Alvaro Jose Santos Revelo
+
+
+<p><img src="https://hangtenseo.com/wp-content/uploads/2019/10/301-Redirect.jpg" alt="no fue posible cargar la imagen de bivenido"></p>
+<p> El proceso que se utilizo para hacer el redirect fue:</p>
+<ol>
+	<li> Crear dos nuevas zonas, la primera llamada viejoservicios,hosteada en el servidor actual, y la segunda nuevoservicios, hosteada en el nuevo servidor</li>
+	<li>Configurar un virtual Host para la direccion www.viejoservicios.com, esto debido a que se queria manetener la pagina servicios.com. Además esto permitio crear un nuevo diretorio dedicado solo a las modificaicones del parcial.</li>
+	<li> configurar el directorio /var/www/parcial para que se registara el contenido de los documentos .htaccess. Es posible realizar el direccionamiento desde el mismo httpd.conf pero se prefirio utilizar .htacces pues facilitaba las pruebas al realizar un 302 en tiempo real. </li>
+
+	<li> Se creo la nueva pagina de recepcion, es decir esta que estan observando.</li>
